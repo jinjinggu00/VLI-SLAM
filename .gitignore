@@ -1,0 +1,17 @@
+inputs/
+runs/
+__pycache__/
+*.pyc
+*.bag
+*.pth
+*.pt
+*.onnx
+*.engine
+*.tar
+*.tar.gz
+.env
+.env.*
+tmp/
+logs/
+feature_env/
+unicorrn_env/
