@@ -82,7 +82,7 @@ wc -l "$latest_run/scene_0001/public_trajectory.txt" \
 
 ## 5. 在已有完整服务器工程中运行
 
-以下命令用于已经恢复完整比赛 workspace、标定、上游代码、Python环境和模型的服务器。`adapter_sources/` 保留原工程的路径关系和历史候选文件；不要把它当成只需 bag 即可运行的全新工程。
+以下命令用于已经恢复完整比赛 workspace、标定、上游代码、Python环境和模型的服务器。`adapter_sources/` 保留最终运行链路及其依赖，并沿用原工程的路径关系；不要把它当成只需 bag 即可运行的全新工程。
 
 ```bash
 export WORKSPACE=/path/to/workspace
@@ -115,6 +115,6 @@ python3 -B package132_r11.py audit
 | `src/v132/joint_bridge.cpp` | 原生g2o观测边、鲁棒核和LM联合求解 |
 | `adapter_sources/native_gba/` | AirSLAM原生GBA相关源码 |
 
-AirSLAM主干保留PLNet点线提取、LightGlue点匹配与IMU处理；BoQ提供图像回访候选，ALIKED/LightGlue作为新增局部匹配分支，Point-LIO及点云几何提供辅助运动信息。团队实现集中在数据适配、多源绑定、验证、约束筛选和优化流程集成。仓库中的历史候选及直接跨模态试验不等于最终启用的算法。
+AirSLAM主干保留PLNet点线提取、LightGlue点匹配与IMU处理；BoQ提供图像回访候选，ALIKED/LightGlue作为新增局部匹配分支，Point-LIO及点云几何提供辅助运动信息。团队实现集中在数据适配、多源绑定、验证、约束筛选和优化流程集成。仓库不包含未启用的实验候选、测试代码、运行日志或结果文件。
 
 上游代码和各自许可保留在 `licenses/`、`upstream/` 与源码头部，详见 `THIRD_PARTY_NOTICES.md`。未重新训练上述公开网络。

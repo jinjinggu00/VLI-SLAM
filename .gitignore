@@ -15,3 +15,20 @@ tmp/
 logs/
 feature_env/
 unicorrn_env/
+
+# Runtime data and generated artifacts
+data/
+datasets/
+outputs/
+results/
+build/
+*.log
+*.csv
+*.npy
+*.npz
+*.pcd
+*.ply
+*.bin
+*.zip
+*.mp4
+*.so
