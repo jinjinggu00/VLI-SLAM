@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "image": "docker.io/xukuanhit/air_slam@sha256:9df819fdbb0ef0925adcd32f1f6d543e12272d4cc5c35118cb259597ebb508e7",
+  "platform": "linux/amd64",
+  "image_compressed_bytes": 18356384900,
+  "sources": {
+    "airslam": {
+      "url": "https://github.com/sair-lab/AirSLAM.git",
+      "commit": "d1265771026091db97ee8f7a6d80692f0edd5fef"
+    },
+    "lightglue": {
+      "url": "https://github.com/cvg/LightGlue.git",
+      "commit": "eb42fee2d71449efb0aa5c10549752b5d75384d8"
+    }
+  },
+  "models": [
+    {
+      "name": "plnet_s0.onnx",
+      "group": "airslam",
+      "bytes": 32966046,
+      "sha256": "1fe5b903be2b70319e8d49b7a5d9c37e796ab48dee0b7f02d2637f39e5314b9a",
+      "url": "https://raw.githubusercontent.com/sair-lab/AirSLAM/d1265771026091db97ee8f7a6d80692f0edd5fef/output/plnet_s0.onnx"
+    },
+    {
+      "name": "plnet_s1.onnx",
+      "group": "airslam",
+      "bytes": 1853391,
+      "sha256": "b5dea6436be40919c7d982bc949620eaa459141e823583a6b3a85c5130913e48",
+      "url": "https://raw.githubusercontent.com/sair-lab/AirSLAM/d1265771026091db97ee8f7a6d80692f0edd5fef/output/plnet_s1.onnx"
+    },
+    {
+      "name": "superpoint_v1_sim_int32.onnx",
+      "group": "airslam",
+      "bytes": 5209816,
+      "sha256": "8fe729b75380d97822b7af1da8c2dfda9f39200839531d4e47c35a70054d7b46",
+      "url": "https://raw.githubusercontent.com/sair-lab/AirSLAM/d1265771026091db97ee8f7a6d80692f0edd5fef/output/superpoint_v1_sim_int32.onnx"
+    },
+    {
+      "name": "superpoint_lightglue.onnx",
+      "group": "airslam",
+      "bytes": 45702218,
+      "sha256": "b8b6331fbf279838eb74c25ff0f34de9daa07997ce9b8002408d56b1c521fe2a",
+      "url": "https://raw.githubusercontent.com/sair-lab/AirSLAM/d1265771026091db97ee8f7a6d80692f0edd5fef/output/superpoint_lightglue.onnx"
+    },
+    {
+      "name": "aliked-n16.pth",
+      "group": "matching",
+      "bytes": 2738091,
+      "sha256": "5be8704840ed662d9d8c561bf7279c222092674e7eb05fd0feab94899e9d82f2",
+      "url": "https://raw.githubusercontent.com/Shiaoming/ALIKED/main/models/aliked-n16.pth"
+    },
+    {
+      "name": "aliked_lightglue_v0-1_arxiv.pth",
+      "group": "matching",
+      "bytes": 47632827,
+      "sha256": "d975e965b105311a6143194852297dff4f02aea5cc2e10cecfed966ca0e22503",
+      "url": "https://github.com/cvg/LightGlue/releases/download/v0.1_arxiv/aliked_lightglue.pth"
+    },
+    {
+      "name": "resnet50_16384.pth",
+      "group": "retrieval",
+      "bytes": 95610672,
+      "sha256": "4691d1545db847da2c0ba911f34e6c520a5da63f8b94c6415fe87d0d8800ebaa",
+      "url": "https://github.com/amaralibey/Bag-of-Queries/releases/download/v1.0/resnet50_16384.pth"
+    },
+    {
+      "name": "resnet50-0676ba61.pth",
+      "group": "retrieval",
+      "bytes": 102530333,
+      "sha256": "0676ba61b6795bbe1773cffd859882e5e297624d384b6993f7c9e683e722fb8a",
+      "url": "https://download.pytorch.org/models/resnet50-0676ba61.pth"
+    }
+  ]
+}
