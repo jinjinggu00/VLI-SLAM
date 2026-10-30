@@ -32,3 +32,8 @@ build/
 *.zip
 *.mp4
 *.so
+
+# Public dependency downloads and local environments
+.deps/
+.venv/
+*.part

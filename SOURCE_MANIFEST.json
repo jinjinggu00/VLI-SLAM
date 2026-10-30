@@ -53,6 +53,13 @@
   },
   "private_input_count": 18,
   "solver_source": "src/v132/joint_bridge.cpp",
-  "publication_profile": "runtime-only",
-  "excluded_source_count": 77
+  "publication_profile": "runtime source plus public dependency preparation; raw pipeline not yet independently runnable",
+  "excluded_source_count": 77,
+  "public_dependency_config": "config/dependencies.json",
+  "public_dependency_bootstrap": "tools/bootstrap.py",
+  "distributed_scene_payloads": 0,
+  "new_source_files": {
+    "tools/bootstrap.py": "4772bd95315459a0628ad5c9ba722fe8fbb11e87b39ba3382cb639ee0d889fc1",
+    "config/dependencies.json": "1f2fb4910b71fdb457e44d781f427dcaec6ee82479c012fa00d71e1860935342"
+  }
 }
